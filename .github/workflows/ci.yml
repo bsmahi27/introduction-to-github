@@ -33,4 +33,9 @@ jobs:
       - uses: actions/upload-artifact@main
         with:
           name: remark-lint-report
-          path: public/     
+          path: public/
+      
+      - uses: actions/download-artifact@main
+        with:
+          name: remark-lint-report
+          path: public/
